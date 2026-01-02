@@ -1,16 +1,88 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-clock"></i> Digital Clock Timer</h1>
+            <p class="subtitle">Real-time JavaScript Clock</p>
+        </header>
+        
+        <main>
+            <div class="clock-card">
+                <div class="time-display">
+                    <!-- Timer will be displayed here -->
+                    <div id="timer" class="timer">00:00:00</div>
+                </div>
+                
+                <div class="date-display">
+                    <!-- Date will be displayed here -->
+                    <div id="date" class="date">Monday, January 1, 2024</div>
+                </div>
+                
+                <div class="time-details">
+                    <div class="detail-card">
+                        <div class="detail-label">12-Hour Format</div>
+                        <div id="time12" class="detail-value">12:00:00 PM</div>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <div class="detail-label">24-Hour Format</div>
+                        <div id="time24" class="detail-value">00:00:00</div>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <div class="detail-label">Day of Week</div>
+                        <div id="dayOfWeek" class="detail-value">Monday</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h2><i class="fas fa-info-circle"></i> Clock Information</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-sync-alt"></i>
+                        <h3>Auto Updates</h3>
+                        <p>Clock updates every second automatically</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-microchip"></i>
+                        <h3>System Time</h3>
+                        <p>Uses your computer's system time</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Date Display</h3>
+                        <p>Shows complete date with day</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Responsive</h3>
+                        <p>Works on all screen sizes</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Built with HTML, CSS & JavaScript | Updates every second</p>
+            <div class="status">
+                <span class="status-indicator active"></span>
+                <span id="statusText">Clock is running...</span>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
-
 </html>
